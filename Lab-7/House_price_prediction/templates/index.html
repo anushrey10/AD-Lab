@@ -56,7 +56,7 @@
             border-color: #ff4b2b;
         }
         button {
-            background:rgb(8, 197, 140);
+            background: rgb(8, 197, 140);
             color: white;
             border: none;
             padding: 10px;
@@ -82,8 +82,20 @@
     <div class="container">
         <h2>🏡 House Price Predictor</h2>
         <form action="/predict" method="post">
-            <input type="number" id="sqft_living" name="sqft_living" placeholder="📏 Square Feet" required>
+            <input type="number" id="sqft_living" name="sqft_living" placeholder="📏 Square Feet of Living Area" required>
             <input type="number" id="bedrooms" name="bedrooms" placeholder="🛏️ Number of Bedrooms" required>
+            <input type="number" id="bathrooms" name="bathrooms" placeholder="🚿 Number of Bathrooms" required>
+            <input type="number" id="floors" name="floors" placeholder="🏠 Number of Floors" required>
+            <input type="number" id="sqft_above" name="sqft_above" placeholder="📏 Square Feet Above Ground" required>
+            <input type="number" id="sqft_basement" name="sqft_basement" placeholder="📏 Square Feet Basement" required>
+            <input type="number" id="lat" name="lat" placeholder="🌍 Latitude" required>
+            <input type="number" id="long" name="long" placeholder="🌍 Longitude" required>
+            <input type="number" id="house_age" name="house_age" placeholder="🏠 House Age (years)" required>
+            <input type="number" id="waterfront" name="waterfront" placeholder="🌊 Waterfront (0 or 1)" required>
+            <input type="number" id="view" name="view" placeholder="👀 View (0-4 scale)" required>
+            <input type="number" id="condition" name="condition" placeholder="🔧 Condition (1-5 scale)" required>
+            <input type="number" id="grade" name="grade" placeholder="⭐ Grade (1-13 scale)" required>
+            <input type="number" id="is_renovated" name="is_renovated" placeholder="🛠️ Renovated (0 or 1)" required>
             <button type="submit">Predict Price</button>
         </form>
         <div class="result">
